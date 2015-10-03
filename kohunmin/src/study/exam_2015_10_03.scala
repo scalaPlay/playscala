@@ -15,7 +15,7 @@ object exam_2015_10_03 {
     def exam4_4(max: Int): Int = {
       var sumNum = 0
       var index = 0
-      while(sumNum >= max) {
+      while(sumNum < max) {
         index += 1;
         if(index % 2 == 0)
           sumNum -= index
