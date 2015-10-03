@@ -1,4 +1,4 @@
-package study20151003
+package study
 
 /**
  * @author Yunseong
