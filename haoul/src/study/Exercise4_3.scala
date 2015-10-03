@@ -16,4 +16,5 @@ object Exercise4_3 {
   def setSum(num: Int): Unit = {
     
   }
+
 }
