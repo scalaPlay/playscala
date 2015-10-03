@@ -1,4 +1,4 @@
-package study20151003
+package study
 
 /**
  * @author Yunseong
@@ -18,7 +18,7 @@ object Exercise4_3 {
     }
     
     /**
-     * 1부터 maxNumber까지를 더하는 메소드
+     * 메소드 오버로딩으로 1부터 maxNumber까지의 리스트를 넘김
      * 
      * @author Yunseong
      * @return
