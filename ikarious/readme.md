@@ -1,1 +1,1 @@
-이정희님 디렉토리입니다.
+Ikarious Playground for Scala
