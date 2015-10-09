@@ -1,4 +1,4 @@
-package study.exam.day1
+package study.homework.day1
 
 /**
  * @author Yunseong

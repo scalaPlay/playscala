@@ -1,4 +1,4 @@
-package study.exam.day2
+package study.homework.day2
 
 import scala.runtime.RichInt
 
