@@ -1,4 +1,4 @@
-package study
+package study.homework
 
 /**
  * @author Haoul
@@ -14,7 +14,7 @@ object Exercise4_3 {
   }
   
   def setSum(num: Int): Unit = {
-    
+    //..dd
   }
 
 }
