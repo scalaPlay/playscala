@@ -1,28 +1,40 @@
 
 import java.util.Scanner
 
-val answer = ( Math.random() * 100 ) + 1
-println("Answer : " + answer)
 
-val count = 0
+object JavaToScala_8_8 {
 
-do {
+    def main(args: Array[String]) : Unit = {
 
-    count = count+1
+        var answer: Int = ( Math.random() * 100 ).toInt + 1
+        println("Answer : " + answer)
+
+        var count = 0
+
+        do {
+
+            count = count+1
     
-    println("1과 100사이의 값을 입력하세요")
-    val input = new java.util.Scanner(System.in)
-    
+            println("1과 100사이의 값을 입력하세요")
+            try{
 
-    if(answer > input){
-        println("UP")
-    }else if(answer < input){
-        println("Down")
-    }else{
-        println("Good")
+                var scanner: Scanner = new java.util.Scanner(System.in)
+                var input: Int = scanner.nextInt()
+
+                 if(answer > input){
+                    println("UP")
+                }else if(answer < input){
+                    println("Down")
+                }else{
+                    println("Good")
+                }
+
+            } catch {
+            
+                case ex: java.util.InputMismatchException => println("catch the inout mismatching")
+            
+            }
+
+           }while (true)
     }
-
-
-
-}while (true)
-
+}
