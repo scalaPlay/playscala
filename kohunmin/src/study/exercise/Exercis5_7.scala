@@ -1,4 +1,4 @@
-package study
+package study.exercise
 
 import scala.actors.Exit
 
