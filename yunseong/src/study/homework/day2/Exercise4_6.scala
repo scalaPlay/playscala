@@ -17,20 +17,25 @@ object Exercise4_6 {
                 if(x + y == 6) println("x : " + x + ", y : " + y + ", sum : " + (x + y)) 
             }        
         }
+        /*
+        var num:Int = (Math.random() * 6).toInt + 1
         
+        println("num : " + num)
+        */
     }
     
     
 }
 
 class Dice(val range : Range = 1 to 6) {
+  
     /*
     def range(value: Range):Unit = {
         println("setter")
         value
     }
     
-    def range = {
+    def range_= {
         
         _range   
     }

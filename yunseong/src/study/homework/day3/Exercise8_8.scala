@@ -24,7 +24,7 @@ object Exercise8_8 {
         case _ =>
           if (randomNum > matchingNum) println("좀 더 큰 값을 입력해야 합니다") else println("좀 더 작은 값을 입력해야 합니다")
           matchingNumber(count + 1)
-      }  
+      }
 
     } catch {
       case ex: NumberFormatException =>
