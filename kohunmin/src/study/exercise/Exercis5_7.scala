@@ -1,4 +1,4 @@
-package study
+package study.exercise
 
 import scala.actors.Exit
 
@@ -14,7 +14,7 @@ object Exercis5_7 {
     println("money=" + money)
 
     val coinUnit = Array(500, 100, 50, 10)
-    var coin = Array(5, 5, 5, 5)
+    val coin = Array(5, 5, 5, 5)
 
     for ( (x,i) <- coinUnit.view.zipWithIndex) {
       var result = money / x
