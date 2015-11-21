@@ -40,14 +40,9 @@ object Exercise11_8 {
       
     }
     
-    registerRank()
-    
     println("\nsortedList : " + sortedList)
   }
   
-  def registerRank(list: List[Student]): Unit = {
-    
-  }
 }
 
 class Student(name: String, ban: Int, no: Int, kor: Int, eng: Int, math: Int) {
