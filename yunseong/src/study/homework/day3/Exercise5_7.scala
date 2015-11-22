@@ -52,6 +52,5 @@ object Exercise5_7 {
       println(coinUnitArr(i) + "원:" + coinArr(i));
     }
     
-    
   }
 }

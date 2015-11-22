@@ -1,4 +1,4 @@
-package study
+package study.exercise
 
 class Exercise6_21(var channel: Int, var volume: Int) {
   var isPowerOn = false

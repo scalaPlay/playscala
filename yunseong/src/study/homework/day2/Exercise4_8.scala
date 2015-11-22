@@ -12,10 +12,10 @@ package study.homework.day2
  */
 object Exercise4_8 {
     def main(args: Array[String]): Unit = {
-        val x:Unknown = new Unknown(0 to 10, 2, "x")
-        val y:Unknown = new Unknown(0 to 10, 4, "y")
+        val x:Unknown = new Unknown(0 to 100, 2, "x")
+        val y:Unknown = new Unknown(0 to 100, 4, "y")
         
-        val eq:Equation = new Equation(x, y, 10)
+        val eq:Equation = new Equation(x, y, 20)
         
         eq.answerFindAll
     }
