@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat
 object Exercise11_15 {
   def payCheckCount(from: Calendar, to: Calendar):Int = (from, to) match {
     case (null , _) | (_ , null) => 0
+    case (from , to) if(from.equals(to) ) => 1
   }
   
   def printResult(from: Calendar , to: Calendar) = {
