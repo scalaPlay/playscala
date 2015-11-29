@@ -1,4 +1,32 @@
 package study.inheritance
+import Element.elem
+
+object Element{
+  private class ArrayElement(
+      val contents: Array[String]
+  ) extends Element
+  
+  private class LineElement(s: String) extends Element {
+    val contents = Array(s)
+    override def width = s.length
+    override def height = 1
+  }
+  
+  private class UniformElement(
+      ch: Char,
+      override val width: Int,
+      override val height: Int
+      ) extends Element {
+    private val line = ch.toString * width
+    def contents = Array.fill(height)(line)
+  }
+  def elem(contens: Array[String]): Element = 
+    new ArrayElement(contens)
+  def elem(chr: Char, width: Int, height: Int): Element = 
+    new UniformElement(chr, width, height)
+  def elem(line: String) : Element =
+    new LineElement(line)
+}
 
 abstract class Element {
   def contents: Array[String]
@@ -9,10 +37,10 @@ abstract class Element {
   def height: Int = contents.length
   
   def above(that: Element): Element = 
-    new ArrayElement(this.contents ++ that.contents)
+   elem(this.contents ++ that.contents)
   
   def beside(that: Element): Element = 
-    new ArrayElement(
+    elem(
       for (
           (line1, line2) <- this.contents zip that.contents
           ) yield line1 + line2
