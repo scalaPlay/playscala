@@ -57,6 +57,7 @@ abstract class Element {
       left beside this beside right
     }
   
+  
   def heighten(h: Int) : Element = 
     if ( h <= height) this
     else {
